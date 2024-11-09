@@ -1,5 +1,5 @@
-console.log(typeof 10); // 자연수, number
-console.log(typeof -5); // 정수, number
+console.log('typeof 10 = ', typeof 10); // 자연수, number
+console.log('typeof -5 = ', typeof -5); // 정수, number
 console.log(typeof 3.14); // 정수, number
 console.log(typeof Infinity); // 무한
 console.log(typeof NaN); // NaN
@@ -44,3 +44,12 @@ console.log( a && b); // 논리 연산 AND, 4
 console.log(a || b); // 논리 연산 OR, 13
 console.log(!a); // 논리 연산 NOT, false
 
+// 숫자 타입 예외
+console.log(a / 0); // Infinity
+console.log(a % 0); // NaN
+console.log(a / "string"); // NaN
+console.log(a % "string"); // NaN
+console.log(a / null); // Infinity
+console.log(a % null); // NaN
+console.log( a / undefined); // NaN
+console.log( a % undefined); // NaN
